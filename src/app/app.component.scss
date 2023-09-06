@@ -4,3 +4,25 @@
     overflow: scroll;
     background-color: darksalmon;
 }
+
+.product--grid{
+   display: flex;
+   flex-direction: column;
+    div {
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        h2,p{
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 40em){
+    .product--grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 15px;
+    }
+}
